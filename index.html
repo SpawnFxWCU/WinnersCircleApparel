@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>$uper$tar</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
+margin:0;
+font-family:Arial;
 background:black;
 color:white;
-font-family:Arial;
 text-align:center;
-margin:0;
 }
 
 .hero{
@@ -19,17 +23,50 @@ padding:120px 20px;
 
 h1{
 font-size:60px;
-letter-spacing:3px;
+letter-spacing:4px;
+}
+
+.drop{
+font-size:20px;
+margin-top:10px;
+opacity:.8;
+}
+
+.products{
+padding:60px 20px;
+background:#111;
+}
+
+.grid{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.card{
+background:#000;
+padding:20px;
+border:1px solid #222;
+width:260px;
+}
+
+.card img{
+width:100%;
+}
+
+.price{
+margin:10px 0;
+font-size:18px;
 }
 
 button{
-padding:15px 40px;
-font-size:18px;
+padding:12px 30px;
 border:none;
 background:white;
 color:black;
+font-weight:bold;
 cursor:pointer;
-margin-top:30px;
 }
 
 button:hover{
@@ -37,63 +74,128 @@ background:#444;
 color:white;
 }
 
+.email{
+padding:80px 20px;
+background:#000;
+}
+
+input{
+padding:12px;
+width:220px;
+}
+
 .footer{
-margin-top:150px;
-padding:20px;
+margin-top:80px;
+padding:30px;
 font-size:14px;
-opacity:0.6;
+opacity:.6;
 }
 
 </style>
+
 </head>
 
 <body>
+
 
 <div class="hero">
 
 <h1>$uper$tar</h1>
 
-<p>Born Different. Built Legendary.</p>
-
-<button>Shop Drop 00</button>
+<p class="drop">DROP 00 — Founder Collection</p>
 
 </div>
-<section style="padding:60px; background:#111;">
 
-<h2>Drop 00 — Founders Pieces</h2>
 
-<div style="display:flex; gap:40px; justify-content:center; flex-wrap:wrap;">
+<section class="products">
 
-<div>
-<img src="jacket1.jpg" width="250">
-<h3>Superstar Jacket</h3>
-<p>$59.99</p>
-<button>Buy</button>
+<h2>Only 3 Pieces Exist</h2>
+
+<div class="grid">
+
+
+<div class="card">
+
+<img src="jacket1.jpg">
+
+<h3>Founder Jacket I</h3>
+
+<p class="price">$49.99</p>
+
+<a href="PAYPAL_LINK_1">
+
+<button>BUY NOW</button>
+
+</a>
+
 </div>
 
-<div>
-<img src="jacket2.jpg" width="250">
-<h3>Superstar Jacket</h3>
-<p>$59.99</p>
-<button>Buy</button>
+
+<div class="card">
+
+<img src="jacket2.jpg">
+
+<h3>Founder Jacket II</h3>
+
+<p class="price">$49.99</p>
+
+<a href="PAYPAL_LINK_2">
+
+<button>BUY NOW</button>
+
+</a>
+
 </div>
 
-<div>
-<img src="jacket3.jpg" width="250">
-<h3>Superstar Jacket</h3>
-<p>$59.99</p>
-<button>Buy</button>
+
+<div class="card">
+
+<img src="jacket3.jpg">
+
+<h3>Founder Jacket III</h3>
+
+<p class="price">$49.99</p>
+
+<a href="PAYPAL_LINK_3">
+
+<button>BUY NOW</button>
+
+</a>
+
 </div>
+
 
 </div>
 
 </section>
-  
+
+
+<section class="email">
+
+<h2>Join The $uper$tar Circle</h2>
+
+<p>Be first to know when drops happen.</p>
+
+<form action="https://formspree.io/f/YOURCODE" method="POST">
+
+<input type="email" name="email" placeholder="Enter email" required>
+
+<button type="submit">JOIN</button>
+
+</form>
+
+</section>
+
+
 <div class="footer">
 
-<p>© 2026 $uper$tarLLc</p>
+<p>© 2026 $uper$tar</p>
+
+<p>Born Different. Built Legendary.</p>
 
 </div>
 
+
 </body>
+
 </html>
